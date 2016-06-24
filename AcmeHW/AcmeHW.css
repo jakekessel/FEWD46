@@ -1,0 +1,56 @@
+
+  background-color: rgb(196, 196, 196);
+
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 700px;
+  background-color: white;
+}
+
+ul{
+  list-style-type: none:
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+a{
+text-decoration: none;
+}
+
+.products{
+  float: right;
+  font-size: 20px;
+  font-family: Lucida Grande;
+  list-style-type: none;
+  color: white;
+}
+
+.signup{
+  float: right;
+  font-size: 20px;
+  font-family: Lucida Grande;
+  list-style-type: none;
+  color: white;
+  background-color: blue;
+}
+
+body{
+  background-color: rgb(242,	241,	240	);
+}
+
+h1{
+  font-family: Lucida Grande;
+}
+
+p{
+  font-family: Lucida Grande;
+}
+
+.copyright{
+  text-align: center;
+}
+
+footer{
+
+}

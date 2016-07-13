@@ -1,0 +1,36 @@
+<input type="text" class="firstName" placeholder="first name">
+
+<input type="text" class="lastName" placeholder="last name">
+
+<button type="button">Click Me!</button>
+
+<p>
+</p>
+
+<script>
+
+var button = document.querySelector("button");
+var input1 = document.querySelector(".firstName");
+var input2 = document.querySelector(".lastName");
+var p = document.querySelector("p");
+
+button.addEventListener("click", sayHey);
+
+function sayHey(){
+  var firstName = input1.value;
+  var lastName = input2.value;
+  var greeting = "Hello " + firstName + " " + lastName;
+  p.textContent = greeting;
+}
+
+//
+// var a = prompt("What is your first name?");
+// var b = prompt("What is your last name?");
+//
+// alert("Hello " + a + " " + b);
+//
+// var p = document.querySelector("p");
+// p.textContent = "Hello " + a + " " + b;
+
+
+</script>

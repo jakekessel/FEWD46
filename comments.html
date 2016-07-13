@@ -1,0 +1,35 @@
+<p>
+
+  <input type="text" name="name" value="">
+
+  <button type="button" name="button">sayIt</button>
+
+</p>
+
+<script type="text/javascript">
+
+var body = document.querySelector("body")
+
+var input = document.querySelector("input")
+
+var button = document.querySelector("button")
+
+button.addEventListener("click", sayIt);
+
+function sayIt(){
+
+  var div = document.createElement("div")
+  div.textContent = input.value;
+  body.appendChild(div);
+
+}
+
+
+</script>
+
+<!-- when = addEventListener
+which = element
+what = string
+do = function
+when button is clicked
+take content of input -->

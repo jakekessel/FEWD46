@@ -1,0 +1,137 @@
+header{
+  background-color: #c4c4c4;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+header nav li{
+  display: inline;
+}
+
+.acmeImage{
+  max-width: 300px;
+  max-height: 300px;
+}
+
+ul{
+  list-style-type: none:
+  margin: 10px;
+  padding: 0;
+  float: right;
+}
+
+a{
+  text-decoration: none;
+}
+
+.products{
+  font-size: 18px;
+
+  font-family: Lucida Grande;
+  color: white;
+  display: inline;
+  padding: 30px;
+  text-shadow: 0 0 4px grey;
+}
+
+.signup{
+  font-size: 18px;
+  font-family: Lucida Grande;
+  color: white;
+  list-style-type: none;
+  border-radius: 10px;
+  border: 1px solid;
+  border-color: blue;
+  background-color: #2A4CB2;
+  display: inline;
+  padding: 10px;
+  text-shadow: 0 0 4px grey;
+  box-sizing: border-box;
+  box-shadow:0 0 4px grey;
+}
+body{
+  background-color: rgb(242,	241,	240	);
+  margin: 0;
+}
+
+h1{
+  font-family: Lucida Grande;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+main{
+  font-family: Lucida Grande;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  max-width: 1600px;
+  max-height: 3000px;
+  background-color: white;
+  border: solid 1px;
+  border-color: rgb(204, 204, 204);
+  border-radius: 10px;
+  box-shadow: rgb(204, 204, 204) 3px 3px;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+img{
+  border: solid 1px;
+  border-color: rgb(204, 204, 204);
+  border-radius: 10px;
+  box-shadow: rgb(204, 204, 204) 3px 3px;
+  box-sizing: border-box;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.field1{
+  float:right;
+  text-decoration: none;
+}
+
+.field2{
+  float:right;
+  text-decoration: none;
+}
+
+.field3{
+  float:right;
+}
+
+.agree{
+float: right;
+}
+
+.border-bottom1{
+  border-top: 1px;
+  border-color: rgb(204, 204, 204);
+  border-style: solid;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.copyright{
+  text-align: center;
+  text-decoration-color: grey;
+}
+
+footer{
+  font-family: Lucida Grande;
+  text-align: center;
+  border-top: 1px;
+  border-color: rgb(204, 204, 204);
+  border-style: solid;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  margin-top: 200px;
+  margin-left: 30px;
+  margin-right: 30px;
+  color: rgb(204, 204, 204);
+}

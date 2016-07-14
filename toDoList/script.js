@@ -1,11 +1,28 @@
 var form = document.querySelector("#new-item-form");
-var input = document.querySelector("new-item-input")
-var ul =
+var userinput = document.querySelector("new-item-input")
+var ul = document.querySelector("todo-list")
 
 function formSubmitted(event) {
   event.preventDefault();
 
   // Your code goes here...
+
+  var li = document.createElement("li");
+  var label = document.createElement("label");
+  var span = document.createElement("span");
+  var inputResult = document.createElement("input");
+
+  ul.appendChild(li);
+  li.appendChild(label);
+  label.appendChild:(span);
+  label.appendChild(inputResult);
+
+  li.setAttribute("type", "checkbox");
+
+
+
+
+
 
   form.reset();
 }
@@ -33,10 +50,9 @@ form.addEventListener("submit", formSubmitted);
 // label to li;
 // inout to label;
 // span to label;
-// set input field type (checkbox);
+// set input field type (attribute) of  (checkbox);
 // make text content of html/user input field the value of span;
 // reset form after each button submission;
-
 
 
 
@@ -86,6 +102,16 @@ function formSubmitted(event) {
   label.appendChild(span);
   listItem.appendChild(label)
   newInput.setAttribute("type","checkbox");
+
+
+
+
+
+
+
+
+
+
   span.textContent = input.value;
   form.reset();
 }

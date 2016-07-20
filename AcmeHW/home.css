@@ -6,7 +6,7 @@ header{
 header nav li{
   display: inline;
 }
-.acmeImage{
+.image{
   max-width: 300px;
   max-height: 300px;
 }

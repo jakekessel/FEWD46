@@ -88,17 +88,21 @@ img{
 }
 
 .field1{
-  float:right;
+  float: right;
   text-decoration: none;
 }
 
 .field2{
-  float:right;
+  float: right;
   text-decoration: none;
 }
 
 .field3{
-  float:right;
+  float: right;
+}
+
+.field4{
+  float: right;
 }
 
 .agree{

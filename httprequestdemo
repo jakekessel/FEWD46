@@ -1,0 +1,18 @@
+WHEN the page loads:
+  - Get the form
+  - Add an event listener
+  WHEN the form is submitted:
+    - Prevent the default form submission
+    - Get the value of the input
+    - Add the input's value to the end of the base URL ("https://api.github.com/users/")
+    - Make an HTTP request to the full URL
+    WHEN the response comes back:
+      - Parse the JSON string response (e.g., JSON.parse(response))
+      - Set the textContent of td#user-name to name
+      - Set the textContent of td#user-bio to bio
+      - Create an <img>
+      - Set the src attribute of the img to avatar_url
+      - Append img to td#user-picture
+
+
+var form = doc

@@ -1,0 +1,34 @@
+
+
+
+
+.stoplightexterior{
+  background-color: rgb(241, 196, 44);
+  margin: 40px auto;
+  width: 200px;
+  height: 450px;
+
+}
+
+.stop{
+  background-color: rgb(110, 86, 14);
+  width: 100px;
+  height: 100px;
+margin: 20px auto;
+}
+
+.slow{
+  background-color: rgb(110, 86, 14);
+  margin: 20px auto;
+  width: 100px;
+  height: 100px;
+}
+
+.go{
+
+background-color: rgb(110, 86, 14);
+margin: 20px auto;
+width: 100px;
+height: 100px;
+
+}

@@ -1,0 +1,83 @@
+<form>
+  <input type="search" id="query" placeholder="GitHub username">
+  <input type="submit" value="Lookup">
+</form>
+
+<table>
+  <tr>
+    <th>Name:</th>
+    <td id="user-name"></td>
+  </tr> 
+  <tr>
+    <th>Bio:</th>
+    <td id="user-bio"></td>
+  </tr>
+  <tr>
+    <th>Picture:</th>
+    <td id="user-picture"></td>
+  </tr>
+</table>
+
+<script>
+function get(url, callback) {
+  var request = new XMLHttpRequest();
+
+  request.open("GET", url, true);
+
+  request.addEventListener("readystatechange", handleReadyStateChange)
+
+  function handleReadyStateChange() {
+    if (request.readyState == 4 && request.status == 200) {
+      callback(request.responseText);
+    }
+  };
+
+  request.send();
+}
+function showUserInfo(response) {
+  console.log(response);
+}
+// This is just an example of calling the get function...
+get("https://api.github.com/users/avand", showUserInfo);
+
+
+var form = document.queryselector("form");
+form.addEventListener("submit", doSomething);
+
+function doSomething(event){
+  event.preventdefault();
+  var input = document.querySelector("#query");
+  var url = "https://api.github.com/users/" + input.value;
+  get (url, newfunc)
+}
+
+function showInfo(data){
+  var accountDeets = JSON.parse(data);
+  var namefield = document.querySelector("#user-name");
+  nameField.textContent = accountDeets.name;
+  var biofield = document.querySelector("#user-bio");
+  bioField.textContent = accountDeets.bio;
+  var img = document.createElement("img");
+  img.setAttribute("src", accountDeets.avatar_url);
+  var avatar = document.querySelector("#user-picture");
+  avatar.appendChild(img);
+
+}
+
+</script>
+
+// WHEN the page loads:
+//   - Get the form
+//   - Add an event listener
+//   WHEN the form is submitted:
+//     - Prevent the default form submission
+//     - Get the value of the input
+//     - Add the input's value to the end of the base URL ("https://api.github.com/users/")
+//     - Make an HTTP request to the full URL
+//     WHEN the response comes back:
+//       - Parse the JSON string response (e.g., JSON.parse(response))
+//       - Set the textContent of td#user-name to name
+//       - Set the textContent of td#user-bio to bio
+//       - Create an <img>
+//       - Set the src attribute of the img to avatar_url
+//       - Append img to td#user-picture

@@ -5,3 +5,8 @@ var header = document.createElement("header");
 body.appendChild(header);
 
 // You do the rest...
+var link = document.createElement("a");
+header.appendChild("a");
+
+var avatar = document.createElement("logo");
+a.appendChild("logo");
